@@ -2,7 +2,7 @@ import csv
 import os
 csvPath = os.path.join("Resources", "election_data.csv")
 outputPath = os.path.join("Resources", "output.txt")
------------------------------------------------------------------------------------
+
 # Variable declarations
 Candidate1: Albert [0]
 Candidate2: Jonah [1]
@@ -53,7 +53,7 @@ with open(csvPath, newline="") as csvfile:
 # A function to format our change list as a fancy string
 def printChange(changeList):
     return f"{changeList[0]} (${changeList[1]})"
------------------------------------------------------------------------------------
+
 # The output is a multiline string
 output = f"""Election Results
 ----------------------------
